@@ -3,9 +3,9 @@ import streamlit as st
 import db
 
 
-st.set_page_config(page_title="POS + Inventory", layout="wide")
+st.set_page_config(page_title="Bootcampx Cashier System", layout="wide")
 
-st.title("POS + Inventory")
+st.title("Bootcampx Cashier System")
 st.caption("Use the sidebar to navigate: Dashboard, Sell, Items, Cashiers, Sales.")
 
 if not db.is_configured():
