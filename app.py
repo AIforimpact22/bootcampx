@@ -1,9 +1,11 @@
 import streamlit as st
 
 import db
+import ui
 
 
-st.set_page_config(page_title="Bootcampx Cashier System", layout="wide")
+st.set_page_config(page_title="Bootcampx Cashier System", page_icon="assets/logo.png", layout="wide")
+ui.render_branding()
 
 st.title("Bootcampx Cashier System")
 st.caption("Use the sidebar to navigate: Dashboard, Sell, Items, Cashiers, Sales.")

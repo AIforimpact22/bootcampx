@@ -6,9 +6,11 @@ import psycopg
 import streamlit as st
 
 import db
+import ui
 
 
 st.set_page_config(page_title="Items", layout="wide")
+ui.render_branding()
 st.title("Items (Inventory)")
 
 if not db.is_configured():

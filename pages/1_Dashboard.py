@@ -6,9 +6,11 @@ import pandas as pd
 import streamlit as st
 
 import db
+import ui
 
 
 st.set_page_config(page_title="Dashboard", layout="wide")
+ui.render_branding()
 st.title("Dashboard")
 
 if not db.is_configured():

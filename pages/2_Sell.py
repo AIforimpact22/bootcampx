@@ -7,9 +7,11 @@ import streamlit as st
 from psycopg.rows import dict_row
 
 import db
+import ui
 
 
 st.set_page_config(page_title="Sell (POS)", layout="wide")
+ui.render_branding()
 st.title("Sell (POS)")
 
 if not db.is_configured():
